@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: darkgrey;">
     <head>
-        <title> </title>
+        <title> Patriot Jaya Tuban </title>
+        <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>
+        <!--INI HEADER NAV-->
+        <header class="navbar">
+            <div class="logo"> </div>
 
+            <nav>
+                <a>Home</a>
+                <a>Our Profile</a>
+                <a>Message Us</a>
+            </nav>
+        </header>
+
+        <main style="padding: 20px;">
+            
+            <!--INI HOME-->
+        <section>
+            <header>
+                <h2>WELCOME TO PATRIOT JAYA TUBAN</h2>
+                <p>What is Patriot Jaya Tuban?</p>
+                
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="assets/7.jpg" style="width:100%">
+                      <div class="text">Player</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="assets/8.jpg" style="width:100%">
+                      <div class="text">Training Schedule</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="assets/6.jpg" style="width:100%">
+                      <div class="text">Coaching Staff</div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>                    
+                
+        </section>
+
+        <!--INI OUR PROFILE-->
+        <section>
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <div class="profile-content">
+                <div class="profile-1">
+                    <div class="text-1">KU 10</div>
+                </div>
+                <div class="profile-2">
+                    <div class="text-1">KU 12</div>
+                </div>
+                <div class="profile-3">
+                    <div class="text-1">KU 12</div>
+                </div>
+                <div class="profile-4">
+                    <div class="text-1">KU 16</div>
+                </div>
+                <div class="profile-5">
+                    <div class="text-1">KU 16</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--INI MESSAGE US-->
+        <section style="margin-top: 30px;">
+
+            <!-- Ini FORM -->
+
+            <form name="message-form" onsubmit="return validateForm()">
+                
+                <fieldset style="display: flex;">
+                <legend><h1>Message Us</h1></legend>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama" /><br /></td>
+                    </tr>       
+                
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="tanggal" id="tanggal" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input type="radio" id="male" name="gender" value="male"/>
+                            <label for="male">Pria</label>
+                            <input type="radio" id="female" name="gender" value="female"/>
+                            <label for="female">Wanita</label>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea name="messages" id="messages" rows="4" cols="50" ></textarea> </td>
+                    </tr>
+            
+                    <tr>
+                        <td rowspan="2">
+                            <button type="submit" value="Submit">Submit</button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                
+                </table>
+
+                <div style="margin-left: 50px;">
+                    <p>Nama : <span id="sender-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-date"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan : <span id="sender-messages"></span></p>
+                </div>
+
+                </fieldset>
+                
+                </form>
+
+        </section>
+
+        </main>
+        <script src="js/script.js"></script>
     </body>
 
 </html>
